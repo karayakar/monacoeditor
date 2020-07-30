@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        #monaco {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 800px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script src="assets/js/jquery-1.12.2.min.js"></script>
+</head>
+<body>
+    <div id="nuget">
+        <textarea id="nugetPacks">Newtonsoft.json</textarea>
+    </div>
+    <div>
+        <input type="button" onclick="build()" value="Build" /> <input type="button" onclick="format()" value="Format" />
+        <div id="buildstatus"></div>
+        <div id="codeformat"></div>
+    </div>
+    <div id="monaco"> </div>
+
+
+    <script src="assets/js/require.js"></script>
+    <script src="assets/js/monaco.js"></script>
+</body>
+</html>
